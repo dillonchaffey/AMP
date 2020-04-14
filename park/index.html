@@ -158,6 +158,9 @@
         zMin = app.scene.toMapCoordinates(0, 0, box.min.y).z,
         zMax = app.scene.toMapCoordinates(0, 0, box.max.y).z;
       // Q3D.gui.initCustomPlaneFolder(zMin, zMax);
+
+      setTimeout(() => app.setRotateAnimationMode(true), 4000);
+
     });
 
     // load the scene
@@ -166,7 +169,6 @@
 
       // Q3D.gui.init();   // initialize dat-gui panel
 
-      setTimeout(() => app.setRotateAnimationMode(true), 4000);
       
 
       // North arrow inset
